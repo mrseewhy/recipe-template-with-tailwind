@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Tailwind</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body class="text-gray-600 font-body">
+    <div class="grid md:grid-cols-4"><!--  content wrapper -->
+        <div class="md:col-span-1 md:flex md:justify-end">
+            <nav class="text-right">
+                <div class="flex justify-between items-center p-4" >
+                    <h1 class="text-gray-900 text-xl font-black uppercase">
+                        <a  href="/" class="">Food Ninja</a>
+                    </h1>
+                    <div class="px-4 cursor-pointer md:hidden flex justify-end" id="burger">
+                        <svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                    </div>
+                </div>
+               
+                  
+                <ul class="mt-6 text-sm hidden md:block" id="menu">
+                    <li class="md:border-r-2 md:border-primary p-2"><a href="#" class="font-bold text-primary btn "><span>Home</span></a></li>
+                    <li class="md:border-r-2 md:border-r-white p-2"><a href="#" class="font-bold btn "><span>About</span></a></li>
+                    <li class="md:border-r-2 md:border-r-white p-2"><a href="#" class="font-bold btn "><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end of nav -->
+        <main class="px-16 py-6 bg-gray-100 md:col-span-3">
+            <div class="flex justify-center md:justify-end items-center">
+                <a href="#" class="font-semibold text-primary btn md:border-primary md:border-2 md:hover:text-white md:hover:bg-primary transition ease-in-out duration-1000">LogIn</a>
+                <a href="#" class="font-semibold text-primary ml-4 btn md:border-primary md:border-2 md:hover:text-white md:hover:bg-primary transition ease-in-out duration-1000">SignUp</a>
+            </div>
+            
+            <header>
+                <h2 class="text-6xl text-red-500">Recipes</h2>
+                <h3 class="text-2xl text-emerald-500">For Ninjas</h3>
+            </header>
+
+            <div >
+                <h4 class="mt-12 font-bold text-gray-800 pb-2 border-b border-blue-900">Latest Recipes</h4>
+                <div class="grid md:grid-cols-3 md:gap-10">
+                <div class="mt-8 relative">
+                    <!-- cards go here -->
+                    <div class="card">
+                        <img src="chi.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="my-2 ml-2">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <div class="badge flex">
+                        <span class="pr-2"><svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          </span>
+                        <span>25 mins</span>
+                    </div>
+                </div>
+                    <div class="mt-8 relative">
+                    <!-- cards go here -->
+                    <div class="card">
+                        <img src="chi.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="my-2 ml-2">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <div class="badge flex">
+                        <span class="pr-2"><svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          </span>
+                        <span>25 mins</span>
+                    </div>
+                </div>
+                <div class="mt-8 relative">
+                    <!-- cards go here -->
+                    <div class="card">
+                        <img src="chi.jpg" alt="" class="w-full h-32 sm:h-48 object-cover">
+                        <div class="my-2 ml-2">
+                            <span class="font-bold">5 Bean Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                    </div>
+                    <div class="badge flex">
+                        <span class="pr-2"><svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          </span>
+                        <span>25 mins</span>
+                    </div>
+                </div>
+
+                
+                <div class="flex justify-center">
+                    <div class=" mt-4 bg-secondary-100 text-secondary-200 hover:bg-secondary-200 hover:text-secondary-100 py-5 px-10 cursor-pointer btn transform hover:scale-125 hover:bg-opacity-50 transition-all ease-in-out duration-1000">Load More</div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
